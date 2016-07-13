@@ -18,3 +18,35 @@ STEPS
 4. client/contact/propect creation
 5. Account startup screen will propose the choice of the company if there is only one it will imeediately go to the company dashBoard
 6. Company dashboard
+
+
+ACCOUNTS:
+->  superadmin
+    manage companies    
+    manage clients
+    create accounts
+    manage users
+    manage users access
+    reset password
+    update app  
+    
+   
+    linked to min one company
+
+-> admin
+    manage cients
+    manage users
+
+    linked to min one company
+
+->  user
+    manage invoices
+
+    linked to only one company
+
+-> client
+    invoices linsting (printing)
+    invoice payments
+
+    
+Dashboard superadmin
