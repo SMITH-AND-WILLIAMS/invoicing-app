@@ -1,1 +1,22 @@
-INDEX TEMPLATE
+{{outlet}}
+<div class="wrapper">
+<h1>Invoice APP</h1>
+<h2>Login</h2>
+<form class="ui form">
+  <div class="field">
+    <label>Email</label>
+    {{input name="email"}}    
+  </div>
+  <div class="field">
+    <label>Last Name</label>
+    {{input type="password" name="password"}}    
+  </div>
+  <div class="field">
+    <div class="ui checkbox">
+      {{input type="checkbox" name="remember" id="remember" class="hidden"}}     
+      <label for="remember">I agree to the Terms and Conditions</label>
+    </div>
+  </div>
+  {{input type="submit" value="submit" class="ui button"}}
+</form>
+</div>
