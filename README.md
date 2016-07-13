@@ -1,53 +1,15 @@
 # Invoicing-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project is an embryon of our CRM.
+It's made with emberjs and nodeJS
 
-## Prerequisites
 
-You will need the following things properly installed on your computer.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+STEPS
+1. Login screen
+2. Account creation
+  The account can hold multiple companies, so when you create an account there is a minimum of 1 comapny attached to it
+3. Company creation that contain clients/contacts/prospects unique for the company that means that if an account has 2 company the contact list will NOT be share between them
+4. client/contact/propect creation
+5. Account startup screen will propose the choice of the company if there is only one it will imeediately go to the company dashBoard
+6. Company dashboard
