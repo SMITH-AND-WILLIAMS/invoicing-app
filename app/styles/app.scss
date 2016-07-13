@@ -1,4 +1,15 @@
+$break-small:460px;
+$break-large:1200px;
+
 .wrapper{
     width:93.75%;
     margin:auto;
+}
+
+.ui .button{
+     @media screen and (max-width: $break-small) {
+         
+        width: 100%;
+        float: none;
+    }
 }
