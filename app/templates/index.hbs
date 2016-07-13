@@ -1,7 +1,7 @@
 {{outlet}}
-<div class="wrapper">
-<h1>Invoice APP</h1>
-<h2>Login</h2>
+<div class="loginWrapper">
+<h1>Invoice IWA</h1>
+<h4>Log in to your account</h4>
 <form class="ui form">
   <div class="field">
     <label>Email</label>
@@ -14,9 +14,12 @@
   <div class="field">
     <div class="ui checkbox">
       {{input type="checkbox" name="remember" id="remember" class="hidden"}}     
-      <label for="remember">I agree to the Terms and Conditions</label>
+      <label for="remember">Remember me</label>
     </div>
   </div>
-  {{input type="submit" value="submit" class="ui button"}}
+  {{input type="submit" value="Submit" class="ui button fluid"}}
 </form>
+<p>{{link-to 'Forgot password ?' 'authenticated'}}</p>
+
+
 </div> 
