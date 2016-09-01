@@ -6,9 +6,8 @@ export default Ember.Route.extend({
             title :[
   { label: 'Mister', value: "Mr" },
   { label: 'Miss', value: "Ms" }
-            ],
-  other:'rererer'
-        } 
+            ]
+        } ;
 
     }
 });

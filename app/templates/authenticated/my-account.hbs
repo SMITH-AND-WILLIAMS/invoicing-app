@@ -19,11 +19,33 @@
                     {{input type="text" name="lastname" id="lastname"}}
                 {{/eui-input}}    
             </div>  
+            <div>
             <label for="firstname">Firstname</label><br>                
                 {{#eui-input size='small'}}
                     {{input type="text" name="firstname" id="firstname"}}
-                {{/eui-input}}   
+                {{/eui-input}} 
+            </div>  
           
         </div>
+
+        <div class="field"> 
+            <div>           
+                <label for="email">Email</label><br>                
+                {{#eui-input size='small'}}
+                    {{input type="text" name="email" id="email" disabled="true" value="toto@toto.be"}}
+                {{/eui-input}}    
+            </div>  
+             <p>{{link-to 'Change email' 'authenticated'}}</p>
+        </div>
+        <div>
+             <div>           
+                <label for="password">Password</label><br>                
+                {{#eui-input size='small'}}
+                    {{input type="password" name="password" id="password" disabled="true" value="nokotpulélé"}}
+                {{/eui-input}}    
+            </div>  
+            <p>{{link-to 'Change password' 'authenticated'}}</p>
+        </div>
+
     </form>
 </div>
