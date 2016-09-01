@@ -1,12 +1,12 @@
 {{outlet}}
 <div class="wrapper">
 <h1>Dashboard</h1>
-gerer mon compte<br>
-
-société 1<br>
-société 2<br>
-société 3<br>
-
-créer une nouvelle société
-
+<h2>My name</h2>
+<p>{{link-to 'Change my profile' 'authenticated.my-account'}}</p>
+<ol>
+    <li>{{link-to 'Triptyk' 'authenticated.my-account/:company'}}</li>
+    <li>{{link-to 'S&W' 'authenticated.my-account/:company'}}</li>
+    <li>{{link-to 'B-services' 'authenticated.my-account/:company'}}</li>
+</ol>
+<p>{{link-to 'Create new company' 'authenticated'}}</p>
 </div>

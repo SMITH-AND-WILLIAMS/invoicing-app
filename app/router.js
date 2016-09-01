@@ -7,8 +7,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('authenticated', function() {
-    this.route('my-account');
+  this.route('', function() {
+    this.route('authenticated', function() {
+      this.route('my-account', function() {
+        this.route('company');
+      });
+    });
   });
 });
 
