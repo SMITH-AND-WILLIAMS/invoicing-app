@@ -1,0 +1,29 @@
+{{outlet}}
+
+<div class="wrapper">
+    <h1>My Account</h1>
+    <form class="ui grid">
+        <div class="field">          
+            <label for="title">Title</label><br>
+
+            {{#eui-select placeholder="Select" options=model.title size='tiny' required="true" as |option index|}}
+             {{option.label}}
+            {{/eui-select}}
+     
+            
+        </div>
+        <div class="field"> 
+            <div>           
+                <label for="lastname">Name</label><br>                
+                {{#eui-input size='small'}}
+                    {{input type="text" name="lastname" id="lastname"}}
+                {{/eui-input}}    
+            </div>  
+            <label for="firstname">Firstname</label><br>                
+                {{#eui-input size='small'}}
+                    {{input type="text" name="firstname" id="firstname"}}
+                {{/eui-input}}   
+          
+        </div>
+    </form>
+</div>

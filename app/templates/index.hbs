@@ -2,22 +2,25 @@
 <div class="loginWrapper">
 <h1>Invoice IWA</h1>
 <h4>Log in to your account</h4>
-<form class="ui form">
+<form class="form">
   <div class="field">
-    <label>Email</label>
-    {{input name="email"}}    
+    <label for="email">Email</label><br>
+    {{#eui-input size='small'}}
+        {{input type="text" name="email" id="email"}}
+    {{/eui-input}}  
   </div>
   <div class="field">
-    <label>Last Name</label>
-    {{input type="password" name="password"}}    
+    <label for="password">Password</label><br>
+    {{#eui-input size='small'}}
+        {{input type="password" name="password" id="password"}}
+    {{/eui-input}}      
   </div>
-  <div class="field">
-    <div class="ui checkbox">
-      {{input type="checkbox" name="remember" id="remember" class="hidden"}}     
-      <label for="remember">Remember me</label>
-    </div>
+  <div class="field checkbox">
+    {{#eui-checkbox style="default" }}<label>Remember me</label>{{/eui-checkbox}}     
   </div>
-  {{input type="submit" value="Submit" class="ui button fluid"}}
+  {{#eui-button type='submit' size='small' action='FAKESUBMIT'}}Submit{{/eui-button}}
+
+
 </form>
 <p>{{link-to 'Forgot password ?' 'authenticated'}}</p>
 

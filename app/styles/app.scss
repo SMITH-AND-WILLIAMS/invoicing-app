@@ -1,73 +1,9 @@
+@import 'emberui-theme';
+
+
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300);
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 
-$radius:3px;
-$break-small:460px;
-$break-large:1200px;
-/*COLORS*/
-$blue:#61C5D3;
-$pink:#FB968C;
-$dark:#666;
-
-$title-font:'Kaushan Script', cursive;
-$primary-font: 'Raleway', sans-serif;
-
-body{
-color:$dark;
-font-family: $primary-font; 
-
-background: #70e1f5; /* Old browsers */
-background: -moz-linear-gradient(-25deg, #70e1f5, #ffd194); /* FF3.6-15 */
-background: -webkit-linear-gradient(-25deg,  #70e1f5, #ffd194); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(-25deg, #FAC9CF, #FFDB8D); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#70e1f5', endColorstr='#ffd194',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-
-
-
+.checkbox label{
+    cursor:pointer;
 }
-h1,h2,h3{
-    font-family: $primary-font; 
-}
-.wrapper{
-    width:93.75%;
-    margin:auto;
-
-}
-
-.loginWrapper{
-    
-    width:320px;
-    margin:auto ;
-    padding:50px 0;
-    h1{
-        margin:0;
-        font-family: $title-font;
-        color:$blue;
-        border-bottom:1px solid $blue;
-        text-align: center;
-    }
-    h4{
-        margin:7px 0;
-        font-weight:300;
-        color:$dark;
-        text-align: center;
-    }
-    
-    
-    
-    p{
-        margin:7px 0;
-    }
-}
- .ui .button{
-       background: $blue;
-       color:#fff;
-     
-        
-
- }
-
- .ui .button:hover{
-             background: $pink!important;
-        }
